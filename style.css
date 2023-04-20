@@ -1,0 +1,59 @@
+html {
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+  }
+
+  #Logo {
+    font-size: 60px;
+    padding: 0;
+    margin: 2%;
+    text-align: center;
+    color: #000000;
+  }
+
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar li {
+    display: inline-grid;
+  }
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+#navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  #navbar a:hover {
+    background-color: rgb(142, 93, 255);
+    color: black;
+  }
+  
+  #selected {
+    background-color: rgb(17, 0, 255);
+    color: black;
+  }
+  
+body {
+    background-color: #d8d8d8;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
