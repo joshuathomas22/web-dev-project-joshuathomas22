@@ -78,6 +78,7 @@ body {
     color: white;
     background-color: rgb(60, 112, 255);
     background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
+    overflow-x: hidden;
   }
 
 .container {
