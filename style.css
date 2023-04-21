@@ -103,7 +103,6 @@ body {
 
 .line {
   position: absolute;
-  z-index: 2;
   left: calc(50%);
   width: 2px;
   top: -50px;
@@ -115,12 +114,11 @@ body {
 .line:before,
 .line::after {
   position: absolute;
-  display: none;
   content: '';
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #ffffff;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -154,7 +152,7 @@ body {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #ffffff;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
