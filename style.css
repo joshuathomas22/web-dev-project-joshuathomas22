@@ -171,3 +171,53 @@ h1{
   font-weight: 400;
   letter-spacing: 1px;
 }
+/* Sets the width, height, and perspective of the card element */
+.card {
+  width: 200px;
+  height: 250px;
+  perspective: 800px;
+}
+
+/* Sets the position, height, and transform style of the card inner element, which is the part that rotates on hover */
+.cardInner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s; /* Adds a smooth transition effect to the hover rotation */
+}
+
+/* Defines the hover effect, which triggers a 180-degree rotation of the card inner element */
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+/* Sets the position, display, and visibility of the card body, which is the front and back of the card */
+.cardBody {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden; /* Hides the back of the card when it is flipped */
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Sets the background image of the front of the card, which is a radial gradient */
+.cardFront {
+  background-image: radial-gradient(circle 248px at center,
+      #16d9e3 0%, #30c7ec 47%,
+      #46aef7 100%);
+}
+
+/* Sets the background color and rotation of the back of the card */
+.cardBack {
+  background-color: #5dffc1;
+  transform: rotateY(180deg);
+}
+
+/* Sets the margin and color of the text content within the card */
+.cardInfo {
+  margin: 2%;
+  margin-left: 5%;
+  color: #000000;
+}
