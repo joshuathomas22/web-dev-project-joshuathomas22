@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +18,44 @@
 
     <nav id="navbar">
         <ul>
-            <li><span onclick="transitionToPage('index.html')">Home</a></li> 
-            <li><span onclick="transitionToPage('About.html')">About</span></li>   
-            <li><span onclick="transitionToPage('Accomplishments.html')" id="selected">Accomplishments</span></li> <!-- This is the active page -->
+            <li><span onclick="transitionToPage('index.html')">Home</a></li>
+            <li><span onclick="transitionToPage('About.html')">About</span></li>
+            <li><span onclick="transitionToPage('Accomplishments.html')" id="selected">Accomplishments</span></li>
+            <!-- This is the active page -->
             <li><span onclick="transitionToPage('Aspirations.html')">Aspirations</span></li>
             <li><span onclick="transitionToPage('Contact.html')">Contact</span></li>
         </ul>
     </nav>
 
-    <audio id="audio" src="Audio/Gerudo Valley.mp3"> </audio>
+    <div class="container">
+        <div class="top-section">
+            <h1>Accomplishments Timeline</h1>
+            <p>
+                Here is a timeline of my greatest achievements! Hover over the images for more information!
+            </p>
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>2001</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, natus aperiam, modi tempore
+                        iusto neque reprehenderit doloremque assumenda perferendis illo quasi beatae dolor quae commodi
+                        eum deleniti magnam vel consectetur?
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
