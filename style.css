@@ -221,3 +221,22 @@ h1{
   margin-left: 5%;
   color: #000000;
 }
+
+#AboutContainer {
+  background-color: #333;
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#LeftColumn {
+  margin-right: 20px;
+}
+
+#RightColumn {
+  color: #fff;
+}
