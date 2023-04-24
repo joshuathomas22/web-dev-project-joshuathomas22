@@ -1,87 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-    scroll-padding-top: 60px;
-    scroll-behavior: smooth;
-  }
+  scroll-padding-top: 60px;
+  scroll-behavior: smooth;
+}
 
-  #Logo {
-    font-size: 60px;
-    padding: 0;
-    margin: 2%;
-    text-align: center;
-    color: #000000;
-  }
+#Logo {
+  font-size: 60px;
+  padding: 0;
+  margin: 2%;
+  text-align: center;
+  color: #000000;
+}
 
-  #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #navbar li {
-    display: inline-grid;
-  }
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-grid;
+}
 
 #navbar {
-    background-color: #333;
-    border-radius: 15px;
-    overflow: hidden;
-    position: sticky;
-    text-align: center;
-    width: 25%;
-    margin: 0 auto;
-    padding: 0;
-    top: 0;
-    z-index: 3;
-  }
+  background-color: #333;
+  border-radius: 15px;
+  overflow: hidden;
+  position: sticky;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  z-index: 3;
+}
 
 #navbar a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0;
-  }
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+}
 
-  #navbar span {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0;
-  }
-  
-  #navbar a:hover {
-    background-color: rgb(142, 93, 255);
-    color: black;
-  }
+#navbar span {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+}
 
-  #navbar span:hover {
-    background-color: rgb(142, 93, 255);
-    color: black;
-  }
-  
-  #selected {
-    background-color: rgb(17, 0, 255);
-    color: black;
-  }
-  
+#navbar a:hover {
+  background-color: rgb(142, 93, 255);
+  color: black;
+}
+
+#navbar span:hover {
+  background-color: rgb(142, 93, 255);
+  color: black;
+}
+
+#selected {
+  background-color: rgb(17, 0, 255);
+  color: black;
+}
+
 body {
-    background-color: #d8d8d8;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    opacity: 1;
-    transition: opacity 1s;
-    line-height: 1.5;
-    font-weight: 400;
-    color: white;
-    background-color: rgb(60, 112, 255);
-    background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
-    background-attachment: fixed;
-    overflow-x: hidden;
-  }
+  background-color: #d8d8d8;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  opacity: 1;
+  transition: opacity 1s;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(60, 112, 255);
+  background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
 
 .container {
   padding: 2rem;
@@ -163,15 +169,16 @@ body {
   width: calc(50% - 2rem);
 }
 
-.show-me:nth-child(n){
+.show-me:nth-child(n) {
   transform: none;
   opacity: 1;
 }
 
-h1{
+h1 {
   font-weight: 400;
   letter-spacing: 1px;
 }
+
 /* Sets the width, height, and perspective of the card element */
 .card {
   width: 200px;
@@ -184,7 +191,8 @@ h1{
   position: relative;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.5s; /* Adds a smooth transition effect to the hover rotation */
+  transition: transform 0.5s;
+  /* Adds a smooth transition effect to the hover rotation */
 }
 
 /* Defines the hover effect, which triggers a 180-degree rotation of the card inner element */
@@ -198,7 +206,8 @@ h1{
   inset: 0;
   display: grid;
   place-items: center;
-  backface-visibility: hidden; /* Hides the back of the card when it is flipped */
+  backface-visibility: hidden;
+  /* Hides the back of the card when it is flipped */
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
@@ -226,7 +235,7 @@ h1{
 #InfoContainer {
   background-color: #333;
   border-radius: 50px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -258,4 +267,74 @@ h1{
   background: #000dff;
   border: 5px solid #000dff;
   border-radius: 3px;
+}
+
+
+/* ======================== */
+.icons {
+	display: flex;
+	column-gap: 25px;
+  margin: 0 auto;
+}
+
+.icon {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+
+
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
 }

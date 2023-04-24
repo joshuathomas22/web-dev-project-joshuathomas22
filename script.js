@@ -30,13 +30,16 @@ const targetY = window.innerHeight * .8;
 function scrollHandler(e) {
   const { scrollY } = window;
   up = scrollY < prevScrollY;
-  down = !up;
+  down = scrollY > prevScrollY;
   const timelineRect = timeline.getBoundingClientRect();
   const lineRect = line.getBoundingClientRect();
   const dist = targetY - timelineRect.top;
 
   if (down && !full) {
     set = Math.max(set, dist);
+    line.style.bottom = `calc(100% - ${set}px)`;
+  } else if (up && !full) {
+    set = Math.min(set, dist);
     line.style.bottom = `calc(100% - ${set}px)`;
   }
 
