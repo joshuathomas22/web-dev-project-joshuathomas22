@@ -21,7 +21,7 @@ const timeline = qs('.timeline'); // Select the timeline element
 const line = qs('.line'); // Select the line element
 line.style.bottom = `calc(100% - 20px)`; // Set the line position
 let prevScrollY = window.scrollY;
-let up, down;
+let down;
 let full = false;
 let set = 0;
 const targetY = window.innerHeight * .8;
@@ -29,7 +29,6 @@ const targetY = window.innerHeight * .8;
 // Scroll handler function
 function scrollHandler(e) {
   const { scrollY } = window;
-  up = scrollY < prevScrollY;
   down = scrollY >= prevScrollY;
   const timelineRect = timeline.getBoundingClientRect();
   const lineRect = line.getBoundingClientRect();
