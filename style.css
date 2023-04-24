@@ -179,6 +179,8 @@ h1 {
   letter-spacing: 1px;
 }
 
+/* CSS for the cards in the Timeline section */
+
 /* Sets the width, height, and perspective of the card element */
 .card {
   width: 200px;
@@ -232,6 +234,11 @@ h1 {
   color: #000000;
 }
 
+/* .............................................. */
+
+
+/* CSS for the InfoContainer */
+
 #InfoContainer {
   background-color: #333;
   border-radius: 50px;
@@ -247,12 +254,18 @@ h1 {
 #LeftColumn {
   flex:1;
   margin-right: 20px;
+  text-align: center;
 }
 
 #RightColumn {
   flex:2;
   color: #fff;
 }
+
+/* .............................................. */
+
+
+/* CSS for the Scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
@@ -271,17 +284,19 @@ h1 {
   border-radius: 3px;
 }
 
+/* .............................................. */
 
-/* ======================== */
+
+/* CSS for the Social Media Icons */
 .icons {
-  
 	display: flex;
 	column-gap: 25px;
-  margin: 0 auto;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .icon {
+ 
 	display: inline-flex;
 	width: 60px;
 	height: 60px;
@@ -331,6 +346,9 @@ h1 {
   margin: auto;
 }
 
+/* .............................................. */
+
+/* CSS for the Profile Picture */
 #pfp {
   width: 70%;
   height: auto;
