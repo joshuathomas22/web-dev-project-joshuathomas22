@@ -20,9 +20,8 @@ const sections = qs('.section', true); // Select all elements with class "sectio
 const timeline = qs('.timeline'); // Select the timeline element
 const line = qs('.line'); // Select the line element
 line.style.bottom = `calc(100% - 20px)`; // Set the line position
-let prevScrollY = window.scrollY;
-let down;
-let full = false;
+let prevScrollY = window.scrollY;   // Get the previous scroll position
+let down;  
 let set = 0;
 const targetY = window.innerHeight * .8;
 
@@ -33,7 +32,10 @@ function scrollHandler(e) {
   const timelineRect = timeline.getBoundingClientRect();
   const lineRect = line.getBoundingClientRect();
   const dist = targetY - timelineRect.top;
+  const element = document.getElementById('navbar');
+  const offset = element.offsetTop;
 
+// Set the line position
   if (down) {
     set = Math.max(set, dist);
     line.style.bottom = `calc(100% - ${set}px)`;
@@ -42,17 +44,21 @@ function scrollHandler(e) {
     line.style.bottom = `calc(100% - ${set}px)`;
   }
 
-  if (dist > timeline.offsetHeight + 50 && !full) {
-    full = true;
-    line.style.bottom = `-50px`;
+  // Change the border radius of the navbar when it's at the top of the page
+  if (window.pageYOffset >= offset) {
+    element.style.borderTopLeftRadius = '0';
+    element.style.borderTopRightRadius = '0';
+  } else {
+    element.style.borderTopLeftRadius = '15px';
+    element.style.borderTopRightRadius = '15px';
   }
 
   // Loop through all "section" elements and add a class if they're in view
   sections.forEach(item => {
     const rect = item.getBoundingClientRect();
 
-    if (rect.top + item.offsetHeight / 1 < targetY) {
-      item.classList.add('show-me');
+    if (rect.top + item.offsetHeight / 1 < targetY) { 
+      item.classList.add('show-me');  // Show the element if it's in view
     } else {
       item.classList.remove('show-me'); // Hide the element if it's not in view
     }

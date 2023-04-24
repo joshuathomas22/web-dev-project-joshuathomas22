@@ -274,9 +274,11 @@ h1 {
 
 /* ======================== */
 .icons {
+  
 	display: flex;
 	column-gap: 25px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .icon {
@@ -292,16 +294,10 @@ h1 {
 	transition-duration: 0.25s;
 }
 
-
 .icon:hover {
 	outline-offset: 4px;
 }
-.icon i {
-	margin: auto;
-}
-.icon:hover i {
-	animation: shake 0.25s;
-}
+
 .instagram:hover {
 	background-image: radial-gradient(
 		circle at 30% 107%,
@@ -313,30 +309,24 @@ h1 {
 	);
 	outline-color: #a02d76;
 }
-.twitter:hover {
-	background-color: #1da1f2;
-	outline-color: #1da1f2;
+
+.gps:hover {
+	background-color: #76cb08;
+	outline-color: #76cb08;
 }
-.linkedin:hover {
+
+.email:hover {
 	background-color: #0077b5;
 	outline-color: #0077b5;
 }
+
 .github:hover {
-	background-color: #2ea44f;
-	outline-color: #2ea44f;
+	background-color: #9243da;
+	outline-color: #9243da;
 }
 
-@keyframes shake {
-	10% {
-		transform: rotate(15deg);
-	}
-	20% {
-		transform: rotate(-15deg);
-	}
-	30% {
-		transform: rotate(15deg);
-	}
-	40% {
-		transform: rotate(-15deg);
-	}
+.iconImg {
+  width: 75%;
+  height: 75%;
+  margin: auto;
 }
