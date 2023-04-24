@@ -245,10 +245,12 @@ h1 {
 }
 
 #LeftColumn {
+  flex:1;
   margin-right: 20px;
 }
 
 #RightColumn {
+  flex:2;
   color: #fff;
 }
 
