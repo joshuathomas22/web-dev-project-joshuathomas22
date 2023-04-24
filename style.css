@@ -241,3 +241,20 @@ h1{
 #RightColumn {
   color: #fff;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #57575771;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000dff;
+  border: 5px solid #000dff;
+  border-radius: 3px;
+}
