@@ -330,3 +330,9 @@ h1 {
   height: 75%;
   margin: auto;
 }
+
+#pfp {
+  width: 70%;
+  height: auto;
+  border-radius: 15px;
+}
