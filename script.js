@@ -19,7 +19,6 @@ function qs(selector, all = false) {
 const sections = qs('.section', true); // Select all elements with class "section"
 const timeline = qs('.timeline'); // Select the timeline element
 const line = qs('.line'); // Select the line element
-line.style.bottom = `calc(100% - 20px)`; // Set the line position
 let prevScrollY = window.scrollY;   // Get the previous scroll position
 let down;  
 let set = 0;

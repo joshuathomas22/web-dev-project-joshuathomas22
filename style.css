@@ -33,7 +33,7 @@ html {
   overflow: hidden;
   position: sticky;
   text-align: center;
-  width: 25%;
+  width: fit-content;
   margin: 0 auto;
   padding: 0;
   top: 0;
@@ -65,7 +65,7 @@ html {
 
 #navbar span:hover {
   background-color: rgb(142, 93, 255);
-  color: black;
+  color: black; 
 }
 
 #selected {
@@ -83,7 +83,7 @@ body {
   color: white;
   background-color: rgb(60, 112, 255);
   background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
-  background-image: url(Images/background_2.png);
+  background-image: url(Images/background_2.webp);
   background-size: cover;
   background-attachment: fixed;
   opacity: 1;
@@ -224,7 +224,7 @@ h1 {
 }
 
 .A1{
-  background-image: url(Images/maverick.png);
+  background-image: url(Images/maverick.webp);
   background-size: 100% 100%;
 }
 
