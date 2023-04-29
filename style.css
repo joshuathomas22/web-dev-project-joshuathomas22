@@ -370,3 +370,28 @@ h1 {
 }
 
 /* .............................................. */
+
+
+
+
+/* CSS for the parallax effect */
+
+.parallax {
+  margin-top: 20px;
+  background-image: url("Images/me.webp");
+
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back1 {
+  background-image: url("Images/me.webp");
+}
+
+.back2 {
+  background-image: url("Images/me2.jpg");
+}
