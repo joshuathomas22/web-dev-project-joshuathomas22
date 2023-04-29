@@ -1,21 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;   
 }
 
 html {
-  scroll-padding-top: 60px;
-  scroll-behavior: smooth;
+  scroll-padding-top: 60px; /* height of the navbar */
+  scroll-behavior: smooth;  /* smooth scrolling */
 }
 
-#Logo {
-  font-size: 60px;
-  padding: 0;
-  margin: 2%;
-  text-align: center;
-  color: #ffffff;
-}
+
+/* CSS for the navbar */
 
 #navbar ul {
   list-style-type: none;
@@ -49,15 +44,21 @@ html {
   margin: 0;
 }
 
-#navbar span:hover {
-  color: red; 
+#navbar span:hover {    
+  color: red;     /* sets the color of the navbar text when hovered over */
 }
 
-#selected {
-  background-color: rgb(0, 119, 255);
-  color: black;
+#selected {   
+  background-color: rgb(0, 119, 255);   /* sets the background color of the selected page */
+  color: black;                      /* sets the text color of the selected page */
 }
 
+/* .............................................. */
+
+
+
+
+/* CSS for the body */
 body {
   background-color: #d8d8d8;
   margin: 0;
@@ -75,6 +76,13 @@ body {
   transition: opacity 2s;
   overflow-x: hidden;
 }
+
+/* .............................................. */
+
+
+
+
+/* CSS for the timeline */
 
 .container {
   padding: 2rem;
@@ -166,6 +174,11 @@ h1 {
   letter-spacing: 1px;
 }
 
+/* .............................................. */
+
+
+
+
 /* CSS for the cards in the Timeline section */
 
 /* Sets the width, height, and perspective of the card element */
@@ -229,6 +242,8 @@ h1 {
 /* .............................................. */
 
 
+
+
 /* CSS for the InfoContainer */
 
 #InfoContainer {
@@ -257,6 +272,8 @@ h1 {
 /* .............................................. */
 
 
+
+
 /* CSS for the Scrollbar */
 
 /* width */
@@ -277,6 +294,8 @@ h1 {
 }
 
 /* .............................................. */
+
+
 
 
 /* CSS for the Social Media Icons */
@@ -340,9 +359,14 @@ h1 {
 
 /* .............................................. */
 
+
+
+
 /* CSS for the Profile Picture */
 #pfp {
   width: 70%;
   height: auto;
   border-radius: 15px;
 }
+
+/* .............................................. */
