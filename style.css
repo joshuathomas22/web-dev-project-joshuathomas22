@@ -269,6 +269,11 @@ h1 {
   color: #fff;
 }
 
+#title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 /* .............................................. */
 
 
@@ -389,9 +394,9 @@ h1 {
 }
 
 .back1 {
-  background-image: url("Images/me.webp");
+  background-image: url("Images/back1.jpg");
 }
 
 .back2 {
-  background-image: url("Images/me2.jpg");
+  background-image: url("Images/back2.jpg");
 }

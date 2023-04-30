@@ -43,15 +43,6 @@ function scrollHandler(e) {
     line.style.bottom = `calc(100% - ${set}px)`;
   }
 
-  // Change the border radius of the navbar when it's at the top of the page
-  if (window.pageYOffset >= offset) {
-    element.style.borderTopLeftRadius = '0';
-    element.style.borderTopRightRadius = '0';
-  } else {
-    element.style.borderTopLeftRadius = '15px';
-    element.style.borderTopRightRadius = '15px';
-  }
-
   // Loop through all "section" elements and add a class if they're in view
   sections.forEach(item => {
     const rect = item.getBoundingClientRect();

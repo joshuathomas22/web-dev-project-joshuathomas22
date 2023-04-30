@@ -11,146 +11,153 @@
 </head>
 
 <body>
+    <main>
+        <nav id="navbar">
+            <ul>
+                <li><span onclick="transitionToPage('index.html')">Home</a></li>
+                <li><span onclick="transitionToPage('About.html')">About Me</span></li>
+                <li><span onclick="transitionToPage('Accomplishments.html')" id="selected">Accomplishments</span></li>
+                <!-- This is the active page -->
+                <li><span onclick="transitionToPage('Goals.html')">My Goals</span></li>
+            </ul>
+        </nav>
 
-    <nav id="navbar">
-        <ul>
-            <li><span onclick="transitionToPage('index.html')">Home</a></li>
-            <li><span onclick="transitionToPage('About.html')">About Me</span></li>
-            <li><span onclick="transitionToPage('Accomplishments.html')" id="selected">Accomplishments</span></li>
-            <!-- This is the active page -->
-            <li><span onclick="transitionToPage('Aspirations.html')">Aspirations</span></li>
-        </ul>
-    </nav>
+        <div class="container">
+            <div class="top-section">
+                <h1>Accomplishments Timeline</h1>
+                <p>
+                    Here is a timeline of my greatest achievements! <br><br><strong>Hover over the images for more
+                        information!</strong>
+                </p>
+            </div>
 
-    <div class="container">
-        <div class="top-section">
-            <h1>Accomplishments Timeline</h1>
-            <p>
-                Here is a timeline of my greatest achievements! <br><br><strong>Hover over the images for more
-                    information!</strong>
-            </p>
+            <div class="timeline">
+                <div class="line"></div>
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2001</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront A1">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2005</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2007</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2008</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2009</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content">
+                        <h2>2012</h2>
+                        <article class="card">
+                            <div class="cardInner">
+                                <div class="cardBody cardFront">
+                                </div>
+                                <div class="cardBody cardBack">
+                                    <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                                        quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro
+                                        ipsa
+                                        eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-
-        <div class="timeline">
-            <div class="line"></div>
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2001</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront A1">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2005</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2007</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2008</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2009</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="bead"></div>
-                <div class="content">
-                    <h2>2012</h2>
-                    <article class="card">
-                        <div class="cardInner">
-                            <div class="cardBody cardFront">
-                            </div>
-                            <div class="cardBody cardBack">
-                                <p class="cardInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-                                    quis nobis eaque provident temporibus modi deleniti voluptate quisquam porro ipsa
-                                    eveniet voluptates quos, id dolorem, facilis earum nihil labore rerum.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
+    </main>
+    
     <script src="script.js"></script>
 </body>
 
