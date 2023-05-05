@@ -1,9 +1,15 @@
+
+/* CSS for the entire page */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*..............................................*/
+
+
+/* CSS for the html */
 html {
   scroll-padding-top: 60px;
   /* height of the navbar */
@@ -11,6 +17,7 @@ html {
   /* smooth scrolling */
 }
 
+/*..............................................*/
 
 
 
@@ -37,9 +44,7 @@ body {
 
 
 
-
 /* CSS for the navbar */
-
 #navbar ul {
   list-style-type: none;
   margin: 0;
@@ -88,8 +93,6 @@ body {
 
 
 
-
-
 /* CSS for the Scrollbar */
 
 /* width */
@@ -110,3 +113,32 @@ body {
 }
 
 /* .............................................. */
+
+
+
+/* CSS for light mode */
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffc23e;
+    background-image: url(../Backgrounds/background_2.webp);
+  }
+
+  #navbar {
+    background-color: #b39bf5;
+  }
+
+  #navbar span {
+    color: #ffffff;
+  }
+
+  #navbar span:hover {
+    color: #000dff;
+  }
+
+  #selected {
+    background-color: #03ffab86;
+    color: #000000;
+  }
+
+}
