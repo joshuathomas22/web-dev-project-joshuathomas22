@@ -75,6 +75,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   margin: 0;
+  transition: color 1s;
 }
 
 #navbar span:hover {
@@ -142,3 +143,5 @@ body {
   }
 
 }
+
+/* .............................................. */
