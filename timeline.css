@@ -1,0 +1,172 @@
+
+
+/* CSS for the timeline */
+
+.container {
+    padding: 2rem;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .top-section {
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .timeline {
+    position: relative;
+    min-height: 150px;
+  }
+  
+  .line {
+    position: absolute;
+    left: calc(50%);
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    background-color: #000;
+    display: none;
+  }
+  
+  .line:before,
+  .line::after {
+    position: absolute;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .line:after {
+    bottom: 0;
+  }
+  
+  .section {
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+  }
+  
+  .section:nth-child(odd) {
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+  }
+  
+  .bead {
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  
+  .content {
+    width: calc(50% - 2rem);
+  }
+  
+  .show-me:nth-child(n) {
+    transform: none;
+    opacity: 1;
+  }
+  
+  h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  /* .............................................. */
+  
+  
+  
+  
+  /* CSS for the cards in the Timeline section */
+  
+  /* Sets the width, height, and perspective of the card element */
+  .card {
+    width: 200px;
+    height: 250px;
+    perspective: 800px;
+  }
+  
+  /* Sets the position, height, and transform style of the card inner element, which is the part that rotates on hover */
+  .cardInner {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    /* Adds a smooth transition effect to the hover rotation */
+  }
+  
+  /* Defines the hover effect, which triggers a 180-degree rotation of the card inner element */
+  .card:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Sets the position, display, and visibility of the card body, which is the front and back of the card */
+  .cardBody {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    backface-visibility: hidden;
+    /* Hides the back of the card when it is flipped */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Sets the background image of the front of the card, which is a radial gradient */
+  .cardFront {
+    background-image: radial-gradient(circle 248px at center,
+        #16d9e3 0%, #30c7ec 47%,
+        #46aef7 100%);
+  }
+  
+  
+  /* Sets the background color and rotation of the back of the card */
+  .cardBack {
+    background-color: #5dffc1;
+    transform: rotateY(180deg);
+  }
+  
+  /* Sets the margin and color of the text content within the card */
+  .cardInfo {
+    margin: 2%;
+    margin-left: 5%;
+    color: #000000;
+  }
+  
+  /* Sets the border radius of the card image */
+  .cardImg{
+    border-radius: 8px;
+  }
+  
+  .Year1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .Year2 {
+    font-size: 40px;
+  }
+  
+  /* .............................................. */
+  
+  
