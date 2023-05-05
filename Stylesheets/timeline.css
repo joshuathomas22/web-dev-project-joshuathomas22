@@ -77,9 +77,10 @@
     top: 20%;
     transform: translateX(-50%);
   }
-  
+
   .content {
-    width: calc(50% - 2rem);
+    /*width: calc(50% - 2rem);*/
+    text-align: center;
   }
   
   .show-me:nth-child(n) {
