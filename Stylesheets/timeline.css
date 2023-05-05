@@ -156,6 +156,7 @@
   /* Sets the border radius of the card image */
   .cardImg{
     border-radius: 8px;
+    object-fit: cover;
   }
   
   .Year1 {
