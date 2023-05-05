@@ -1,13 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;   
+  box-sizing: border-box;
 }
 
 html {
-  scroll-padding-top: 60px; /* height of the navbar */
-  scroll-behavior: smooth;  /* smooth scrolling */
+  scroll-padding-top: 60px;
+  /* height of the navbar */
+  scroll-behavior: smooth;
+  /* smooth scrolling */
 }
+
+
+
+
+/* CSS for the body */
+body {
+  background-color: #d8d8d8;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(60, 112, 255);
+  background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
+  background-image: url(Backgrounds/background_2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  transition: opacity 2s;
+  overflow-x: hidden;
+}
+
+/* .............................................. */
+
+
 
 
 /* CSS for the navbar */
@@ -44,75 +72,20 @@ html {
   margin: 0;
 }
 
-#navbar span:hover {    
-  color: red;     /* sets the color of the navbar text when hovered over */
+#navbar span:hover {
+  color: red;
+  /* sets the color of the navbar text when hovered over */
 }
 
-#selected {   
-  background-color: rgb(0, 119, 255);   /* sets the background color of the selected page */
-  color: black;                      /* sets the text color of the selected page */
-}
-
-/* .............................................. */
-
-
-
-
-/* CSS for the body */
-body {
-  background-color: #d8d8d8;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: white;
-  background-color: rgb(60, 112, 255);
-  background-image: linear-gradient(315deg, rgb(120, 156, 255) 0%, rgb(26, 101, 214) 74%);
-  background-image: url(Backgrounds/background_2.webp);
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 1;
-  transition: opacity 2s;
-  overflow-x: hidden;
+#selected {
+  background-color: rgb(0, 119, 255);
+  /* sets the background color of the selected page */
+  color: black;
+  /* sets the text color of the selected page */
 }
 
 /* .............................................. */
 
-
-
-
-/* CSS for the InfoContainer */
-
-#InfoContainer {
-  background-color: #333;
-  border-radius: 50px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-#LeftColumn {
-  flex:1;
-  margin-right: 20px;
-  text-align: center;
-}
-
-#RightColumn {
-  flex:2;
-  color: #fff;
-}
-
-#title {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-/* .............................................. */
 
 
 
@@ -135,108 +108,5 @@ body {
   border: 5px solid #000dff;
   border-radius: 3px;
 }
-
-/* .............................................. */
-
-
-
-
-/* CSS for the Social Media Icons */
-.icons {
-	display: flex;
-	column-gap: 25px;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.icon {
- 
-	display: inline-flex;
-	width: 60px;
-	height: 60px;
-	text-decoration: none;
-	font-size: 26px;
-	color: #fff;
-	border-radius: 50%;
-	outline: 2px solid #fff;
-	transition-property: outline-offset, outline-color, background-color;
-	transition-duration: 0.25s;
-}
-
-.icon:hover {
-	outline-offset: 4px;
-}
-
-.instagram:hover {
-	background-image: radial-gradient(
-		circle at 30% 107%,
-		#fdf497 0%,
-		#fdf497 5%,
-		#fd5949 45%,
-		#d6249f 60%,
-		#285aeb 90%
-	);
-	outline-color: #a02d76;
-}
-
-.gps:hover {
-	background-color: #76cb08;
-	outline-color: #76cb08;
-}
-
-.email:hover {
-	background-color: #0077b5;
-	outline-color: #0077b5;
-}
-
-.github:hover {
-	background-color: #9243da;
-	outline-color: #9243da;
-}
-
-.iconImg {
-  width: 75%;
-  height: 75%;
-  margin: auto;
-}
-
-/* .............................................. */
-
-
-
-
-/* CSS for the Profile Picture */
-#pfp {
-  width: 70%;
-  height: auto;
-  border-radius: 15px;
-}
-
-/* .............................................. */
-
-
-
-
-/* CSS for the parallax effect */
-
-.parallax {
-  margin-top: 40px;
-  
-  height: 35rem;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.back1 {
-  background-image: url("Backgrounds/back1.jpg");
-}
-
-.back2 {
-  background-image: url("Backgrounds/back2.jpg");
-}
-
 
 /* .............................................. */

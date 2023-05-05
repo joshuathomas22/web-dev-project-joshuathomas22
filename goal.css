@@ -1,0 +1,24 @@
+
+/* CSS for the parallax effect */
+
+.parallax {
+    margin-top: 40px;
+  
+    height: 35rem;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .back1 {
+    background-image: url("Backgrounds/back1.jpg");
+  }
+  
+  .back2 {
+    background-image: url("Backgrounds/back2.jpg");
+  }
+  
+  
+  /* .............................................. */
