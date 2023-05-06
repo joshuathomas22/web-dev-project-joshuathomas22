@@ -81,6 +81,8 @@ body {
 #navbar span:hover {
   color: red;
   /* sets the color of the navbar text when hovered over */
+  cursor: pointer;
+  /* sets the cursor to a pointer when hovered over */
 }
 
 #selected {
