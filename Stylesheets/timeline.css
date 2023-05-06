@@ -79,8 +79,8 @@
   }
 
   .content {
-    /*width: calc(50% - 2rem);*/
-    text-align: center;
+    width: calc(50% - 1rem);
+    text-align: -webkit-center;
   }
   
   .show-me:nth-child(n) {
