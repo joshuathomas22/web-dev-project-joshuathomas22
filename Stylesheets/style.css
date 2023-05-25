@@ -19,6 +19,9 @@ html {
 
 /*..............................................*/
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+
 
 
 /* CSS for the body */
@@ -26,7 +29,7 @@ body {
   background-color: #d8d8d8;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: white;
@@ -147,3 +150,4 @@ body {
 }
 
 /* .............................................. */
+

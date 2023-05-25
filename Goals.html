@@ -11,7 +11,7 @@
     <title>Portfolio - joshuathomas22</title>
 </head>
 
-<body>
+<body defer onload="initMap()">
 
     <nav id="navbar">
         <ul>
@@ -23,63 +23,46 @@
         </ul>
     </nav>
 
-   <main>
+    <main>
 
-    <div class="parallax back1">
-    </div>
+        <div class="parallax back1">
+        </div>
 
-    <div id="InfoContainer">
-        <section id="LeftColumn">
-            <h2 id="contact">Contact Me:</h2>
-            <div class="icons">
-                <a href="https://instagram.com/officialrickastley?igshid=YmMyMTA2M2Y=" target="_blank" class="icon instagram">
-                    <img class="iconImg" src="Icons/instagram.webp" alt="An icon of Instagram">
-                </a>
+        <div id="InfoContainer">
+            <section id="LeftColumn">
 
-                <a href="mailto:joshua.thomas22@bathspa.ac.uk" class="icon email">
-                    <img class="iconImg" src="Icons/email.webp" alt="An email icon">
-                </a>
+                <h3>My Google Maps Demo</h3>
+                <!--The div element for the map -->
+                <div id="googleMap"></div>
 
-                <a href="https://github.com/joshuathomas22" target="_blank" class="icon github">
-                    <img class="iconImg" src="Icons/github.webp" alt="An icon of Github">
-                </a>
 
-                <a href="https://goo.gl/maps/wUiceTXb1mxJ4hyx5" target="_blank" class="icon gps">
-                    <img class="iconImg" src="Icons/gps.webp" alt="A GPS icon">
-                </a>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
-    <div class="parallax back2">
-    </div>
+        <div class="parallax back2">
+        </div>
 
-    <div id="InfoContainer">
-        <section id="LeftColumn">
-            <h2 id="contact">Contact Me:</h2>
-            <div class="icons">
-                <a href="https://instagram.com/officialrickastley?igshid=YmMyMTA2M2Y=" target="_blank" class="icon instagram">
-                    <img class="iconImg" src="Icons/instagram.webp" alt="An icon of Instagram">
-                </a>
-
-                <a href="mailto:joshua.thomas22@bathspa.ac.uk" class="icon email">
-                    <img class="iconImg" src="Icons/email.webp" alt="An email icon">
-                </a>
-
-                <a href="https://github.com/joshuathomas22" target="_blank" class="icon github">
-                    <img class="iconImg" src="Icons/github.webp" alt="An icon of Github">
-                </a>
-
-                <a href="https://goo.gl/maps/wUiceTXb1mxJ4hyx5" target="_blank" class="icon gps">
-                    <img class="iconImg" src="Icons/gps.webp" alt="A GPS icon">
-                </a>
-            </div>
-        </section>
-    </div>
+        <div id="InfoContainer">
+            <section id="LeftColumn">
+                <h2 id="contact">Contact Me:</h2>
+                <h3>Interests</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, pariatur vero? Minus at nostrum
+                    nulla
+                    quibusdam laborum optio dolores accusantium aliquam. Modi incidunt possimus sit pariatur recusandae!
+                    Commodi dolorum minima eaque consectetur sequi exercitationem odio accusamus? Ratione officia
+                    tempore
+                    doloribus possimus rerum accusamus, eius fugit dolorum unde! Cupiditate iste modi optio ducimus,
+                    odit,
+                    sunt nulla obcaecati excepturi numquam quam culpa?</p>
+            </section>
+        </div>
 
     </main>
 
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy3ryuIWXpUhduyLMQBqUsrCSYLm9Qaw8&callback=myMap"></script>
     <script src="transition.js"></script>
+    <script src="map.js"></script>
 </body>
 
 </html>

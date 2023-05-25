@@ -22,3 +22,11 @@
   
   
   /* .............................................. */
+
+#googleMap {
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    border: 5px solid black;
+  }
