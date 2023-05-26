@@ -29,7 +29,7 @@
 
     <!-- Load Javascript -->
     <script defer src="./Javascript/jokes.js"></script>
-    <script defer src="/Javascript/transition.js"></script>
+    <script defer src="./Javascript/transition.js"></script>
 </head>
 
 <body>
@@ -48,11 +48,10 @@
 
     <main>
         <section id="InfoContainer">
-            
 
-            <section id="RightColumn">
-                <h2 id="title">About Me</h2>
-                <h3>Welcome to</h3>
+            <section id="welcome">
+                <h2 id="title">Welcome!</h2>
+                <h3>What is this?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, pariatur vero? Minus at nostrum
                     nulla
                     quibusdam laborum optio dolores accusantium aliquam. Modi incidunt possimus sit pariatur recusandae!
@@ -62,9 +61,12 @@
                     odit,
                     sunt nulla obcaecati excepturi numquam quam culpa?</p>
 
+                <div id="jokeContainer">
+                    <h3>While you're here, take a funny joke!</h3>
                     <div id="jokes"></div>
-
                     <button type="button" id="jokeButton">Generate new joke</button>
+                </div>
+
             </section>
         </section>
 
