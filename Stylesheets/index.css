@@ -63,6 +63,7 @@
   justify-items: center;
   margin-top: 50px;
   display: grid;
+  gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
 }
@@ -76,6 +77,21 @@
   background-color: #404040;
   border-radius: 50px;
   padding: 30px;
-  width: 60%;
+  width: 364px;
+  min-width: 364px;
+  height: fit-content;
 
 }
+
+.videoTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1350px) {
+  #techTips {
+    grid-template-columns: repeat(2, 1fr);
+  }  
+}
+/* .............................................. */
