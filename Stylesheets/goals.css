@@ -24,9 +24,10 @@
   /* .............................................. */
 
 #googleMap {
-    width: 50%;
+    width: 400px;
     height: 400px;
     margin: 0 auto;
     align-items: center;
     border: 5px solid black;
+    border-radius: 50%;
   }

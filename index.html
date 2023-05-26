@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the home page.">
     <link rel="stylesheet" href="./Stylesheets/style.css">
-    <title>Portfolio - joshuathomas22</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Joshua Thomas's Portfolio | Home</title>
+    <meta name="title" content="Joshua Thomas's Portfolio | Home">
+    <meta name="description" content="This is the Home Page of Joshua Thomas's Portfolio.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <meta property="og:title" content="Joshua Thomas's Portfolio | Home">
+    <meta property="og:description" content="This is the Home Page of Joshua Thomas's Portfolio.">
+    <meta property="og:image" content="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <meta property="twitter:title" content="Joshua Thomas's Portfolio | Home">
+    <meta property="twitter:description" content="This is the Home Page of Joshua Thomas's Portfolio.">
+    <meta property="twitter:image" content="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+
+    <!-- Load Javascript -->
+    <script defer src="./Javascript/jokes.js"></script>
+    <script defer src="/Javascript/transition.js"></script>
 </head>
 
 <body>
 
     <nav id="navbar">
         <ul>
-            <li><span onclick="transitionToPage('index.html')" id="selected">Home</span></li> <!-- This is the active page -->
+            <li><span onclick="transitionToPage('index.html')" id="selected">Home</span></li>
+            <!-- This is the active page -->
             <li><span onclick="transitionToPage('./Pages/About.html')">About Me</span></li>
             <li><span onclick="transitionToPage('./Pages/Accomplishments.html')">Accomplishments</span></li>
             <li><span onclick="transitionToPage('./Pages/Goals.html')">My Goals</span></li>
@@ -25,7 +48,6 @@
 
     <button type="button" id="jokeButton">Generate new joke</button>
 
-    <script src="./Javascript/jokes.js"></script>
-    <script src="/Javascript/transition.js"></script>
 </body>
+
 </html>
