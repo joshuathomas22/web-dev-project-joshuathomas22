@@ -1,45 +1,81 @@
 /* CSS for the InfoContainer */
 
 #InfoContainer {
-    background-color: #404040;
-    border-radius: 50px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  #title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  /* .............................................. */
+  background-color: #404040;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* .............................................. */
 
 
-  #jokeContainer {
-    margin-top: 50px;
-    text-align: center;
-    justify-content: center;
+/* CSS for the JokeContainer */
 
-  }
+#jokeContainer {
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+#jokeButton {
+  background-color: #bebebe;
+  border-radius: 50px;
+  border: 3px solid black;
+  padding: 10px;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#jokeButton:hover {
+  background-color: #fff2f2;
+  border-color: red;
+}
+
+/* .............................................. */
 
 
-  #jokeButton {
-    background-color: #bebebe;
-    border-radius: 50px;
-    border: 3px solid black;
-    padding: 10px;
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
 
-  #jokeButton:hover {
-    background-color: #fff2f2;
-    border-color: red;
-  }
+/* CSS for the YouTube videos */
+
+#content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#techTips {
+  justify-items: center;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+}
+
+.techVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.videoContainer {
+  background-color: #404040;
+  border-radius: 50px;
+  padding: 30px;
+  width: 60%;
+
+}
