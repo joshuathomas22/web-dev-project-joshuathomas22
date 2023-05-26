@@ -14,6 +14,12 @@ const myMap = () => {
         map,
         animation:google.maps.Animation.BOUNCE
     });
-
-
+    
 }
+
+var element = document.getElementById("googleMap");
+var hoverSound = document.getElementById("hoverSound");
+
+element.addEventListener("mouseover", function() {
+  hoverSound.play();
+});
