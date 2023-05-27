@@ -10,10 +10,14 @@
   }
   
   .top-section {
+    background-color: #404040;
+    border-radius: 50px;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 5rem;
+    margin-top: 50px;
   }
   
   .timeline {

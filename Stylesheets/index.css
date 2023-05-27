@@ -18,6 +18,11 @@
   margin-bottom: 20px;
 }
 
+#intro {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 /* .............................................. */
 
 
@@ -56,14 +61,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 #techTips {
   justify-items: center;
-  margin-top: 50px;
   display: grid;
-  gap: 40px;
+  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
 }
@@ -85,7 +89,7 @@
 
 .videoTitle {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 
