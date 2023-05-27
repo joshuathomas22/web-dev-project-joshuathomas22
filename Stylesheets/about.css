@@ -21,7 +21,11 @@
 #RightColumn {
   flex: 2;
   color: #fff;
+  font-family: 'calibri';
+  font-size: 18px;
 }
+
+
 
 #title {
   font-size: 30px;
@@ -125,12 +129,22 @@
   .iconImg {
     filter: invert(1);
   }
+
+  a {
+    text-decoration: none;
+    color: #d4b4ff;
+  }
 }
 
 
 @media (prefers-color-scheme: light) {
   #InfoContainer {
     background-color: #e4e4e4;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4c49ff;
   }
 
   .icon {
