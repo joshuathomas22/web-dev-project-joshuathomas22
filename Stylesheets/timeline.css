@@ -3,7 +3,6 @@
 /* CSS for the timeline */
 
 .container {
-    padding: 2rem;
     padding-bottom: 400px;
     margin: 0 auto;
     max-width: 800px;
@@ -147,7 +146,7 @@
   
   /* Sets the background color and rotation of the back of the card */
   .cardBack {
-    background-color: #5dffc1;
+    background-color: #404040;
     transform: rotateY(180deg);
   }
   
@@ -155,7 +154,7 @@
   .cardInfo {
     margin: 2%;
     margin-left: 5%;
-    color: #000000;
+    color: #ffffff;
   }
   
   /* Sets the border radius of the card image */
@@ -174,5 +173,34 @@
   }
   
   /* .............................................. */
+
+
+
   
-  
+  @media (prefers-color-scheme: light) {
+
+    .top-section {
+      background-color: #e4e4e4;
+    }
+    
+    .line {
+      background-color: #ffffff;
+    }
+    
+    .bead {
+      background-color: #000000;
+    }
+
+    .line:before,
+    .line::after {
+      background-color: #000000;
+    }
+
+    .cardBack {
+      background-color: #e4e4e4;
+    }
+
+    .cardInfo {
+      color: #000000;
+    }
+  }

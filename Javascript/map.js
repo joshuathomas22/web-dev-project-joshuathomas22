@@ -7,21 +7,21 @@ const myMap = () => {
     };
 
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    
+
 
     new google.maps.Marker({
         position: { lat: 49.09857852320189, lng: -122.7062599561647 },
         map,
-        animation:google.maps.Animation.BOUNCE,
+        animation: google.maps.Animation.BOUNCE,
         icon: "../Icons/marker.png",
-        
+
     });
-    
+
 }
 
 var element = document.getElementById("googleMap");
 var hoverSound = document.getElementById("hoverSound");
 
-element.addEventListener("mouseover", function() {
-  hoverSound.play();
+element.addEventListener("mouseover", function () {
+    hoverSound.play();
 });

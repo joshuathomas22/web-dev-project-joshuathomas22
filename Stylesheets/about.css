@@ -119,3 +119,46 @@
 }
 
 /* .............................................. */
+
+
+@media (prefers-color-scheme: dark) {
+  .iconImg {
+    filter: invert(1);
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  #InfoContainer {
+    background-color: #e4e4e4;
+  }
+
+  .icon {
+    outline-color: #000000;
+  }
+
+  .instagram:hover {
+    outline-color: #000000;
+  }
+  
+  .gps:hover {
+    outline-color: #000000;
+  }
+  
+  .email:hover {
+    outline-color: #000000;
+  }
+  
+  .github:hover {
+    outline-color: #000000;
+  }
+  
+  #RightColumn {
+    color: #000000;
+  }
+
+  #pfp {
+    border: 2px solid #000000;
+  }
+
+}

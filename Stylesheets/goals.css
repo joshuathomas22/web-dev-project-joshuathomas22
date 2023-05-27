@@ -11,22 +11,23 @@
     margin: 0 auto;
     margin-top: 50px;
   }
-  
+
   .LeftColumn {
     flex: 1;
     margin-right: 5rem;
     text-align: center;
   }
-  
+
   .RightColumn {
     flex: 2;
     color: #fff;
     font-size: 20px;
   }
-  
+
   .title {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 5px;
   }
 
   #objectives {
@@ -35,13 +36,18 @@
     width: 100%;
     height: auto;
   }
-  
+
+  ul {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+  }
+
   /* .............................................. */
 
-  
-/* CSS for the parallax effect */
 
-.parallax {
+  /* CSS for the parallax effect */
+
+  .parallax {
     margin-top: 40px;
     height: 25rem;
     background-attachment: fixed;
@@ -49,19 +55,19 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .back1 {
     background-image: url("../Backgrounds/back1.webp");
   }
-  
+
   .back2 {
     background-image: url("../Backgrounds/back2.webp");
   }
-  
-  
+
+
   /* .............................................. */
 
-#googleMap {
+  #googleMap {
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -70,10 +76,22 @@
     border-radius: 50%;
   }
 
-#googleMap :hover {
+  #googleMap :hover {
     background-image: url("../Images/ltt.webp");
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
   }
 
 
+  @media (prefers-color-scheme: light) {
+
+    .InfoContainer {
+      background-color: #e4e4e4;
+    }
+
+    .RightColumn {
+      color: #000;
+    }
+
+
+  }

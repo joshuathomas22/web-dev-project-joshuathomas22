@@ -99,3 +99,16 @@
   }  
 }
 /* .............................................. */
+
+
+@media (prefers-color-scheme: light) {
+
+#InfoContainer {
+  background-color: #e4e4e4;
+}
+
+.videoContainer {
+  background-color: #e4e4e4;
+}
+
+}

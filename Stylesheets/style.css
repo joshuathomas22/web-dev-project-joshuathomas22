@@ -127,27 +127,27 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #ffc23e;
+    background-color: #aaa69e;
+    color: #000000;
     background-image: url(../Backgrounds/background_2.webp);
   }
 
   #navbar {
-    background-color: #b39bf5;
+    background-color: #d8d8d8;
   }
 
   #navbar span {
-    color: #ffffff;
-  }
-
-  #navbar span:hover {
-    color: #000dff;
-  }
-
-  #selected {
-    background-color: #03ffab86;
     color: #000000;
   }
 
+  #navbar span:hover {
+    color: #676ddd;
+  }
+
+  #selected {
+    background-color: #5db3e6e3;
+    color: #000000;
+  }
 }
 
 /* .............................................. */
