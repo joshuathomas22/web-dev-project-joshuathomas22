@@ -14,18 +14,26 @@
   
   .LeftColumn {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 5rem;
     text-align: center;
   }
   
   .RightColumn {
     flex: 2;
     color: #fff;
+    font-size: 20px;
   }
   
   .title {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+
+  #objectives {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
   }
   
   /* .............................................. */
