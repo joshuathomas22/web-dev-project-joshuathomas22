@@ -18,10 +18,25 @@ const myMap = () => {       // Function to create a map
 
 }
 
-// Variables to play a sound when hovering over the map
-var element = document.getElementById("googleMap");
-var hoverSound = document.getElementById("hoverSound");
 
-element.addEventListener("mouseover", function () { // Play sound when mouse is over the map
-    hoverSound.play();  // Play sound
+const googleMapElement = document.getElementById("googleMap");  // Get the element with the ID "googleMap"
+var audio = document.getElementById("hoverSound");  // Get the audio element
+let hoverCount = 0;     // Counter variable to keep track of the number of hover events
+
+
+
+googleMapElement.addEventListener("mouseover", function() {     // Event listener for the "mouseover" event
+  
+  hoverCount++; // Increment the hover count
+
+  if (hoverCount => 5) {   // Check if the hover count is equal to 5
+
+    // Apply CSS to the div
+    googleMapElement.style.backgroundImage = 'url("../Images/ltt.webp")';
+    googleMapElement.style.backgroundSize = "cover";
+    googleMapElement.style.backgroundRepeat = "no-repeat";
+
+    audio.play();   // Play the audio
+    hoverCount = 0;
+  }
 });

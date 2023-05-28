@@ -76,13 +76,6 @@
     border-radius: 50%;
   }
 
-  #googleMap :hover {
-    background-image: url("../Images/ltt.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-
   @media (prefers-color-scheme: light) {
 
     .InfoContainer {
