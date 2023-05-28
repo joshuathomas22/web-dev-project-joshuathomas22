@@ -73,8 +73,9 @@
     margin: 0 auto;
     align-items: center;
     border: 5px solid black;
-    border-radius: 50%;
+    border-radius: 5rem;
   }
+
 
   @media (prefers-color-scheme: light) {
 
